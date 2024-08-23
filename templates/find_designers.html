@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Find Designers</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/animate.css' %}">
+    <link rel="stylesheet" href="{% static 'css/icomoon.css' %}">
+    <link rel="stylesheet" href="{% static 'css/bootstrap.css' %}">
+    <link rel="stylesheet" href="{% static 'css/flexslider.css' %}">
+    <link rel="stylesheet" href="{% static 'css/owl.carousel.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/owl.theme.default.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <script src="{% static 'js/modernizr-2.6.2.min.js' %}"></script>
+</head>
+<body>
+
+    <header>
+        <h1>Find Top Designers</h1>
+        <p>Discover talented designers who can bring your vision to life. Explore our curated list of design professionals and find the perfect match for your project.</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#overview">Overview</a></li>
+            <li><a href="#designers">Designers</a></li>
+            <li><a href="#submit-request">Submit a Request</a></li>
+            <li><a href="#contact">Contact Us</a></li>
+        </ul>
+    </nav>
+
+    <section id="overview">
+        <h2>Overview</h2>
+        <p>Our platform connects you with skilled designers specializing in various fields. Whether you need graphic design, UI/UX, branding, or other design services, our designers are here to help you achieve your goals.</p>
+    </section>
+
+    <section id="designers">
+        <h2>Featured Designers</h2>
+        <p>Browse through our featured designers to find the best fit for your project:</p>
+        <div class="designer-list">
+            <div class="designer">
+                <h3>Jane Doe</h3>
+                <p><strong>Specialization:</strong> Graphic Design, Branding</p>
+                <p><strong>About:</strong> Jane is a seasoned graphic designer with over 10 years of experience in branding and visual identity.</p>
+                <p><a href="mailto:jane.doe@example.com">Contact Jane</a></p>
+            </div>
+            <div class="designer">
+                <h3>John Smith</h3>
+                <p><strong>Specialization:</strong> UI/UX Design, Web Design</p>
+                <p><strong>About:</strong> John specializes in creating user-friendly interfaces and engaging web experiences with a focus on usability.</p>
+                <p><a href="mailto:john.smith@example.com">Contact John</a></p>
+            </div>
+            <!-- Add more designers as needed -->
+        </div>
+    </section>
+
+    <section id="submit-request">
+        <h2>Submit a Design Request</h2>
+        <p>If you have a design project and would like to connect with one of our designers, please submit a request using the form below:</p>
+        <form action="[Submission URL]" method="post">
+            <label for="name">Your Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Your Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="project">Project Description:</label>
+            <textarea id="project" name="project" rows="4" required></textarea>
+
+            <button type="submit">Submit Request</button>
+        </form>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p>If you have any questions or need further assistance, feel free to reach out to us:</p>
+        <ul>
+            <li>Email: <a href="mailto:info@example.com">jacktonmboya1@gmail.com</a></li>
+            <li>Phone: 0799877727</li>
+            <li>Address: 432 Utawala, Nairobi, Kenya</li>
+        </ul>
+    </section>
+
+    <footer>
+        <small class="block">&copy; 2024 Jackton Mboya Furnitures. All Rights Reserved.</small>
+                    <small class="block">Designed by <a href="Jackton Mboya" target="_blank">Jackton Mboya</a>.</small>
+    </footer>
+<script src="{% static 'js/jquery.min.js' %}"></script>
+<script src="{% static 'js/jquery.easing.1.3.js' %}"></script>
+<script src="{% static 'js/bootstrap.min.js' %}"></script>
+<script src="{% static 'js/jquery.waypoints.min.js' %}"></script>
+<script src="{% static 'js/jquery.flexslider-min.js' %}"></script>
+<script src="{% static 'js/owl.carousel.min.js' %}"></script>
+<script src="{% static 'js/jquery.countTo.js' %}"></script>
+<script src="{% static 'js/main.js' %}"></script>
+
+</body>
+</html>

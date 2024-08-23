@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API Documentation</title>
+    {% load static %}
+  <link rel="stylesheet" href="{% static 'css/animate.css' %}">
+    <link rel="stylesheet" href="{% static 'css/icomoon.css' %}">
+    <link rel="stylesheet" href="{% static 'css/bootstrap.css' %}">
+    <link rel="stylesheet" href="{% static 'css/flexslider.css' %}">
+    <link rel="stylesheet" href="{% static 'css/owl.carousel.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/owl.theme.default.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <script src="{% static 'js/modernizr-2.6.2.min.js' %}"></script>
+</head>
+<body>
+
+    <header>
+        <h1>API Documentation</h1>
+        <p>Welcome to the API documentation for our service. Here you will find details on how to interact with our API endpoints.</p>
+    </header>
+
+    <div class="container">
+        <section>
+            <h2>Base URL</h2>
+            <p>The base URL for accessing our API is: <code>http://127.0.0.1:8000/api/</code></p>
+        </section>
+
+        <section>
+            <h2>Endpoints</h2>
+
+            <h3>1. List and Create Subscribers</h3>
+            <p><strong>Endpoint:</strong> <code>/api/subscribers/</code></p>
+            <p><strong>Method:</strong> GET, POST</p>
+            <p><strong>Description:</strong> Retrieve a list of subscribers or create a new subscriber.</p>
+            <p><strong>Request Body (POST):</strong></p>
+            <pre>
+{
+    "email": "string"
+}
+            </pre>
+            <p><strong>Response:</strong></p>
+            <pre>
+HTTP 200 OK
+[
+    {
+        "id": 1,
+        "email": "string",
+        "subscription_date": "YYYY-MM-DDTHH:MM:SSZ"
+    }
+]
+            </pre>
+
+            <h3>2. Retrieve, Update, or Delete Subscriber</h3>
+            <p><strong>Endpoint:</strong> <code>/api/subscribers/&lt;id&gt;/</code></p>
+            <p><strong>Method:</strong> GET, PUT, DELETE</p>
+            <p><strong>Description:</strong> Retrieve, update, or delete a specific subscriber by ID.</p>
+            <p><strong>Request Body (PUT):</strong></p>
+            <pre>
+{
+    "email": "string"
+}
+            </pre>
+            <p><strong>Response:</strong></p>
+            <pre>
+HTTP 200 OK
+{
+    "id": 1,
+    "email": "string",
+    "subscription_date": "YYYY-MM-DDTHH:MM:SSZ"
+}
+            </pre>
+
+            <h3>3. List and Create Contact Messages</h3>
+            <p><strong>Endpoint:</strong> <code>/api/contact_messages/</code></p>
+            <p><strong>Method:</strong> GET, POST</p>
+            <p><strong>Description:</strong> Retrieve a list of contact messages or create a new contact message.</p>
+            <p><strong>Request Body (POST):</strong></p>
+            <pre>
+{
+    "first_name": "string",
+    "last_name": "string",
+    "email": "string",
+    "subject": "string",
+    "message": "string"
+}
+            </pre>
+            <p><strong>Response:</strong></p>
+            <pre>
+HTTP 200 OK
+[
+    {
+        "id": 1,
+        "first_name": "string",
+        "last_name": "string",
+        "email": "string",
+        "subject": "string",
+        "message": "string",
+        "responded": true
+    }
+]
+            </pre>
+
+            <h3>4. Retrieve, Update, or Delete Contact Message</h3>
+            <p><strong>Endpoint:</strong> <code>/api/contact_messages/&lt;id&gt;/</code></p>
+            <p><strong>Method:</strong> GET, PUT, DELETE</p>
+            <p><strong>Description:</strong> Retrieve, update, or delete a specific contact message by ID.</p>
+            <p><strong>Request Body (PUT):</strong></p>
+            <pre>
+{
+    "first_name": "string",
+    "last_name": "string",
+    "email": "string",
+    "subject": "string",
+    "message": "string",
+    "responded": true
+}
+            </pre>
+            <p><strong>Response:</strong></p>
+            <pre>
+HTTP 200 OK
+{
+    "id": 1,
+    "first_name": "string",
+    "last_name": "string",
+    "email": "string",
+    "subject": "string",
+    "message": "string",
+    "responded": true
+}
+            </pre>
+        </section>
+
+        <section>
+            <h2>Authentication</h2>
+            <p>Some endpoints may require authentication. Please refer to our authentication guide for more details on how to access secured endpoints.</p>
+        </section>
+
+        <section>
+            <h2>Rate Limits</h2>
+            <p>We enforce rate limits on API requests to ensure fair usage and performance. Please refer to our rate limit documentation for details.</p>
+        </section>
+    </div>
+
+    <footer>
+        <small class="block">&copy; 2024 Jackton Mboya Furnitures. All Rights Reserved.</small>
+                    <small class="block">Designed by <a href="Jackton Mboya" target="_blank">Jackton Mboya</a>.</small>
+    </footer>
+<script src="{% static 'js/jquery.min.js' %}"></script>
+<script src="{% static 'js/jquery.easing.1.3.js' %}"></script>
+<script src="{% static 'js/bootstrap.min.js' %}"></script>
+<script src="{% static 'js/jquery.waypoints.min.js' %}"></script>
+<script src="{% static 'js/jquery.flexslider-min.js' %}"></script>
+<script src="{% static 'js/owl.carousel.min.js' %}"></script>
+<script src="{% static 'js/jquery.countTo.js' %}"></script>
+<script src="{% static 'js/main.js' %}"></script>
+</body>
+</html>

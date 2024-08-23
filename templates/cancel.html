@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Cancelled</title>
+     {% load static %}
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Secure payment page for Jackton Mboya Furnitures" />
+    <meta name="keywords" content="payment, secure, checkout" />
+    <meta name="author" content="Jackton Mboya" />
+
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/font-awesome.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body>
+    <header>
+        <h1>Payment Cancelled</h1>
+    </header>
+    <main>
+        <p>Your payment has been cancelled.</p>
+        <a href="{% url 'payment_view' %}">Try Again</a>
+        <a href="{% url 'index' %}">Return to Home</a>
+    </main>
+    <footer>
+        <p>&copy; 2024 Jackton Mboya Furnitures. All Rights Reserved.</p>
+    </footer>
+    <script src="{% static 'js/jquery.min.js' %}"></script>
+    <script src="{% static 'js/bootstrap.min.js' %}"></script>
+    <script src="{% static 'js/main.js' %}"></script>
+</body>
+</html>

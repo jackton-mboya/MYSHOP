@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Branding Services</title>
+    {% load static %}
+
+    <!-- Animate.css -->
+    <link rel="stylesheet" href="{% static 'css/animate.css' %}">
+    <!-- Icomoon Icon Fonts-->
+    <link rel="stylesheet" href="{% static 'css/icomoon.css' %}">
+    <!-- Bootstrap  -->
+    <link rel="stylesheet" href="{% static 'css/bootstrap.css' %}">
+
+    <!-- Flexslider  -->
+    <link rel="stylesheet" href="{% static 'css/flexslider.css' %}">
+
+    <!-- Owl Carousel  -->
+    <link rel="stylesheet" href="{% static 'css/owl.carousel.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/owl.theme.default.min.css' %}">
+
+    <!-- Theme style  -->
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+
+    <!-- Modernizr JS -->
+    <script src="{% static 'js/modernizr-2.6.2.min.js' %}"></script>
+    <!-- FOR IE9 below -->
+    <!--[if lt IE 9]>
+    <script src="{% static 'js/respond.min.js' %}"></script>
+    <![endif]-->
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <h1>Branding Services</h1>
+            <p>Transform your brand with our expert branding services and create a lasting impact.</p>
+            <nav>
+                <ul>
+                    <li><a href="{% url 'index' %}">Home</a></li>
+                    <li><a href="{% url 'shop' %}">Shop</a></li>
+                    <li><a href="{% url 'about' %}">About Us</a></li>
+                    <li><a href="{% url 'contact' %}">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Branding Process Section -->
+    <section id="branding-process">
+        <div class="container">
+            <h2>Our Branding Process</h2>
+            <div class="process-steps">
+                <div class="step">
+                    <img src="{% static 'images/step1.png' %}" alt="Discovery">
+                    <h3>Discovery</h3>
+                    <p>We start by understanding your brand’s goals, audience, and market. This helps us craft a unique brand identity that resonates.</p>
+                </div>
+                <div class="step">
+                    <img src="{% static 'images/step2.jpg' %}" alt="Strategy">
+                    <h3>Strategy</h3>
+                    <p>Our team develops a strategic plan that includes brand positioning, messaging, and visual identity. This plan will guide all branding efforts.</p>
+                </div>
+                <div class="step">
+                    <img src="{% static 'images/step3.jpg' %}" alt="Design">
+                    <h3>Design</h3>
+                    <p>We create compelling designs for your brand, including logos, color schemes, and typography that align with your brand strategy.</p>
+                </div>
+                <div class="step">
+                    <img src="{% static 'images/step4.jpg' %}" alt="Implementation">
+                    <h3>Implementation</h3>
+                    <p>We ensure your brand is consistently applied across all touchpoints, from marketing materials to digital assets.</p>
+                </div>
+                <!-- Add more steps as needed -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Case Studies Section -->
+    <section id="case-studies">
+        <div class="container">
+            <h2>Case Studies</h2>
+            <div class="case-study-gallery">
+                <div class="case-study-item">
+                    <img src="{% static 'images/case1.jpg' %}" alt="Case Study 1">
+                    <h3>Brand Redesign for XYZ Corp</h3>
+                    <p>Learn how we helped XYZ Corp revamp their brand identity and increase their market presence.</p>
+                </div>
+                <div class="case-study-item">
+                    <img src="{% static 'images/case2.jpg' %}" alt="Case Study 2">
+                    <h3>Logo Design for ABC Ltd</h3>
+                    <p>Discover the journey of creating a memorable logo for ABC Ltd that captures their brand essence.</p>
+                </div>
+                <!-- Add more case studies as needed -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Client Testimonials Section -->
+    <section id="testimonials">
+        <div class="container">
+            <h2>What Our Clients Say</h2>
+            <div class="testimonial-gallery">
+                <div class="testimonial-item">
+                    <blockquote>
+                        <p>"The branding services provided were exceptional. Our new brand identity has significantly boosted our visibility."</p>
+                        <footer>- Jane Doe, CEO of Bata Corp</footer>
+                    </blockquote>
+                </div>
+                <div class="testimonial-item">
+                    <blockquote>
+                        <p>"The team delivered beyond our expectations. Our brand redesign was handled professionally and creatively."</p>
+                        <footer>- John Smith, Marketing Director at Posta Ltd</footer>
+                    </blockquote>
+                </div>
+                <!-- Add more testimonials as needed -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <small class="block">&copy; 2024 Jackton Mboya Furnitures. All Rights Reserved.</small>
+            <small class="block">Designed by <a href="Jackton Mboya" target="_blank">Jackton Mboya</a>.</small>
+        </div>
+    </footer>
+
+    <!-- jQuery -->
+    <script src="{% static 'js/jquery.min.js' %}"></script>
+    <!-- jQuery Easing -->
+    <script src="{% static 'js/jquery.easing.1.3.js' %}"></script>
+    <!-- Bootstrap -->
+    <script src="{% static 'js/bootstrap.min.js' %}"></script>
+    <!-- Waypoints -->
+    <script src="{% static 'js/jquery.waypoints.min.js' %}"></script>
+    <!-- Carousel -->
+    <script src="{% static 'js/owl.carousel.min.js' %}"></script>
+    <!-- countTo -->
+    <script src="{% static 'js/jquery.countTo.js' %}"></script>
+    <!-- Flexslider -->
+    <script src="{% static 'js/jquery.flexslider-min.js' %}"></script>
+    <!-- Main -->
+    <script src="{% static 'js/main.js' %}"></script>
+</body>
+</html>
+

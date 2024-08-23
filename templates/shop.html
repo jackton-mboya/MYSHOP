@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/animate.css' %}">
+    <link rel="stylesheet" href="{% static 'css/icomoon.css' %}">
+    <link rel="stylesheet" href="{% static 'css/bootstrap.css' %}">
+    <link rel="stylesheet" href="{% static 'css/flexslider.css' %}">
+    <link rel="stylesheet" href="{% static 'css/owl.carousel.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/owl.theme.default.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <script src="{% static 'js/modernizr-2.6.2.min.js' %}"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 1rem;
+            text-align: center;
+        }
+        nav a {
+            color: #fff;
+            margin: 0 1rem;
+            text-decoration: none;
+        }
+        main {
+            padding: 2rem;
+        }
+        .product-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+        .product-item {
+            flex: 1 1 calc(33.333% - 1rem);
+            box-sizing: border-box;
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 1rem;
+            text-align: center;
+        }
+        .product-item img {
+            max-width: 100%;
+            height: auto;
+            border-bottom: 1px solid #ddd;
+            margin-bottom: 1rem;
+        }
+        .product-item p {
+            margin: 0.5rem 0;
+        }
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 1rem;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to Our Shop</h1>
+        <nav>
+            <a href="{% url 'index' %}">Home</a>
+            <a href="{% url 'contact' %}">Contact</a>
+
+        </nav>
+    </header>
+    <main>
+        <h2>Our Products</h2>
+        <div class="product-grid">
+            <div class="product-item">
+                <img src="{% static 'images/product-1.jpg' %}" alt="Product 1">
+                <p>Hauteville Concrete Rocking Chair</p>
+                <p>Price: KSh 5,499</p>
+            </div>
+            <div class="product-item">
+                <img src="{% static 'images/product-2.jpg' %}" alt="Product 2">
+                <p>Pavilion Speaker</p>
+                <p>Price: Ksh 1,500</p>
+            </div>
+            <div class="product-item">
+                <img src="{% static 'images/product-3.jpg' %}" alt="Product 3">
+                <p>Ligomancer</p>
+                <p>Price: KSh 250,000</p>
+            </div>
+            <div class="product-item">
+                <img src="{% static 'images/product-4.jpg' %}" alt="Product 4">
+                <p>Alato Cabinet</p>
+                <p>Price: KSh 140,000</p>
+            </div>
+            <div class="product-item">
+                <img src="{% static 'images/product-5.jpg' %}" alt="Product 5">
+                <p>Earing Wireless</p>
+                <p>Price: KSh 2,499</p>
+            </div>
+            <div class="product-item">
+                <img src="{% static 'images/product-6.jpg' %}" alt="Product 6">
+                <p>Sculptural Coffee Table</p>
+                <p>Price: KSh 15,000</p>
+            </div>
+            <div class="product-item">
+                <img src="{% static 'images/product-7.jpg' %}" alt="Product 7">
+                <p>The WW Chair</p>
+                <p>Price: KSh 129,900</p>
+            </div>
+            <div class="product-item">
+                <img src="{% static 'images/product-8.jpg' %}" alt="Product 8">
+                <p>Himitsu Money Box</p>
+                <p>Price: KSh 2.100</p>
+            </div>
+            <div class="product-item">
+                <img src="{% static 'images/product-9.jpg' %}" alt="Product 9">
+                <p>Ariane Prin</p>
+                <p>Price: KSh 1,500</p>
+            </div>
+        </div>
+    </main>
+    <footer>
+         <small class="block">&copy; 2024 Jackton Mboya Furnitures. All Rights Reserved.</small>
+                    <small class="block">Designed by <a href="Jackton Mboya" target="_blank">Jackton Mboya</a>.</small>
+    </footer>
+<script src="{% static 'js/jquery.min.js' %}"></script>
+<script src="{% static 'js/jquery.easing.1.3.js' %}"></script>
+<script src="{% static 'js/bootstrap.min.js' %}"></script>
+<script src="{% static 'js/jquery.waypoints.min.js' %}"></script>
+<script src="{% static 'js/jquery.flexslider-min.js' %}"></script>
+<script src="{% static 'js/owl.carousel.min.js' %}"></script>
+<script src="{% static 'js/jquery.countTo.js' %}"></script>
+<script src="{% static 'js/main.js' %}"></script>
+</body>
+</html>
+

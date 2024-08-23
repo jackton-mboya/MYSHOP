@@ -1,0 +1,95 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Payment - Jackton Mboya Furnitures</title>
+    {% load static %}
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Secure payment page for Jackton Mboya Furnitures" />
+    <meta name="keywords" content="payment, secure, checkout" />
+    <meta name="author" content="Jackton Mboya" />
+
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/font-awesome.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body>
+<nav>
+            <a href="{% url 'index' %}">Home</a>
+            <a href="{% url 'about' %}">About</a>
+            <a href="{% url 'help' %}">Help</a>
+            <a href="{% url 'terms' %}">Terms</a>
+            <a href="{% url 'contact' %}">Contact</a>
+
+        </nav>
+    <div id="page">
+
+        <header id="fh5co-header" class="fh5co-cover" role="banner" style="background-image: url('{% static 'images/header-bg.jpg' %}');">
+            <div class="overlay"></div>
+            <div class="container text-center">
+                <h1>Secure Payment</h1>
+            </div>
+        </header>
+
+        <section id="fh5co-payment" class="fh5co-section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8 col-md-offset-2">
+                        <h2 class="text-center">Complete Your Purchase</h2>
+                        <p class="text-center">Please follow the instructions below to finalize your transaction securely.</p>
+
+                        <div class="payment-options">
+                            <h3>Payment Options</h3>
+                            <ul class="list-unstyled">
+                                <li>
+                                    <i class="fa fa-credit-card"></i> Credit/Debit Card
+                                </li>
+                                <li>
+                                    <a href="{% url 'create_payment' %}" class="btn btn-primary">
+                                        <i class="fa fa-paypal"></i> PayPal
+                                    </a>
+                                </li>
+                                <li>
+                                    <i class="fa fa-mobile"></i> Mobile Payment
+                                </li>
+                            </ul>
+                        </div>
+
+                        <form method="post" action="{% url 'process_payment' %}" class="payment-form">
+                            {% csrf_token %}
+                            <div class="form-group">
+                                <label for="card-number">Card Number</label>
+                                <input type="text" id="card-number" name="card_number" class="form-control" placeholder="Enter your card number" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="expiry-date">Expiry Date</label>
+                                <input type="text" id="expiry-date" name="expiry_date" class="form-control" placeholder="MM/YY" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="cvv">CVV</label>
+                                <input type="text" id="cvv" name="cvv" class="form-control" placeholder="Enter CVV" required>
+                            </div>
+                            <div class="form-group">
+                                <button type="submit" class="btn btn-primary btn-block">Pay Now</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer id="fh5co-footer" class="fh5co-section">
+            <div class="container text-center">
+                <small>&copy; 2024 Jackton Mboya Furnitures. All Rights Reserved.</small>
+                <small>Designed by <a href="https://www.linkedin.com/in/jacktonmboya" target="_blank">Jackton Mboya</a>.</small>
+            </div>
+        </footer>
+
+    </div>
+
+    <script src="{% static 'js/jquery.min.js' %}"></script>
+    <script src="{% static 'js/bootstrap.min.js' %}"></script>
+    <script src="{% static 'js/main.js' %}"></script>
+</body>
+</html>
